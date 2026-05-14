@@ -2048,4 +2048,4 @@ export const fallbackQuestions: Question[] = [
       { id: 'o3', text: 'Alle licht heeft dezelfde roodverschuiving', isCorrect: false },
       { id: 'o4', text: 'Het universum staat stil', isCorrect: false },
     ]
-  };
+  }];

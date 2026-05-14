@@ -2,7 +2,7 @@ export const AI = {
     async generateText(prompt: string): Promise<string> {
         // We halen de sleutel op uit de omgevingsvariabelen die via de YAML zijn geïnjecteerd
         const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
-        const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+        const endpoint = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
 
         if (!apiKey) {
             throw new Error("Gemini API Key is missing. Controleer je GitHub Secrets en YAML env.");
